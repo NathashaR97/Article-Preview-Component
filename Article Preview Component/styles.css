@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --white:#ffffff;
+    --lightgrey:#9FABB2;
+    --darkgrey:#4E555D;
+    --greyishwhite:#ECEFF4;
+    --lightblue: #EDF2F8;
+}
+
+*, a{
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--lightblue);
+}
+
+.main-container {
+    max-width: 330px;
+    min-height: 500px;
+    width:100%;
+    background-color: var(--white);
+    border-radius: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.image-container {
+    background-image: url("./images/drawers.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    height:200px;
+}
+
+.bottom-container {
+    padding: 30px 20px 30px 20px
+}
+
+.heading {
+    color: var(--darkgrey);
+    font-size: 18px;
+    font-weight:900;
+}
+
+.paragraph {
+    font-size: 15;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.person {
+    background-image: url("./images/avatar-michelle.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info {
+    margin-left: 10px;
+}
+
+.info .name{
+    font-weight: 700;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share img a{
+    width:20px;
+    height:17px;
+}
+
+@media screen and (min-width:768px){
+    .main-container {
+        max-width: 740px;
+        max-height: 290px;
+        min-height: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    .image-container {
+        width:287px;
+        height: 287px;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 0px;
+    }
+
+    .bottom-container {
+        max-width: 400px;
+    }
+
+    .heading {
+        font-size: 20px;
+        max-width: 350px;
+    }
+}
